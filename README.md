@@ -37,7 +37,7 @@ rm /tmp/claude-caffeinate-enabled
 - **`-t 1800`** — 30-minute deadman switch. If Claude stops calling tools, your Mac can sleep within 30 minutes.
 - **`-is`** — prevents idle sleep + system sleep (lid close on AC power). Does not prevent sleep on battery.
 - **PID file** — tracks its own caffeinate instance, won't interfere with other caffeinate processes.
-- **Flag file** — cleared on reboot. One session at a time.
+- **Session-scoped** — flag file is cleaned up on session end. No persistence across sessions.
 
 ## Installation
 

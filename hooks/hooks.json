@@ -10,6 +10,17 @@
           }
         ]
       }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rm -f /tmp/claude-caffeinate-enabled /tmp/claude-caffeinate.pid"
+          }
+        ]
+      }
     ]
   }
 }
