@@ -11,7 +11,7 @@ This plugin adds the `-s` flag, which prevents sleep even when the lid is closed
 ## Usage
 
 ```
-/claude-caffeinate:caffeinate
+/caffeinate:caffeinate
 ```
 
 That's it. Your Mac will stay awake — even with the lid closed — while Claude is actively working. The caffeinate process automatically expires 30 minutes after Claude's last tool use, so your Mac will sleep normally once Claude is done.
@@ -45,7 +45,7 @@ Add the marketplace, then install:
 
 ```
 /plugin marketplace add jul-sh/claude-plugins
-/plugin install claude-caffeinate@jul-sh
+/plugin install caffeinate@jul-sh
 ```
 
 Or add to your `~/.claude/settings.json`:
@@ -53,7 +53,7 @@ Or add to your `~/.claude/settings.json`:
 ```json
 {
   "enabledPlugins": {
-    "claude-caffeinate@jul-sh": true
+    "caffeinate@jul-sh": true
   },
   "extraKnownMarketplaces": {
     "jul-sh": {
