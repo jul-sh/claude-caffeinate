@@ -1,0 +1,5 @@
+{
+  "name": "claude-caffeinate",
+  "version": "0.1.0",
+  "description": "Prevents your Mac from sleeping while Claude Code is actively working."
+}
